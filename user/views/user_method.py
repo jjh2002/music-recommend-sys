@@ -105,7 +105,7 @@ def search_by_id(request):
     if user:
         user_dict = model_to_dict(user)  # 将 UserInfo 对象转换为字典
         return JsonResponse({'status': 'success', 'user': user_dict})
-    print("用户名或密码错误")
+    print("用户名或密码错误1")
     return JsonResponse({'status': 'failed'})
 
 
